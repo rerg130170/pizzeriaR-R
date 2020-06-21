@@ -67,6 +67,22 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   /*background-image: url("pizza6.png");*/
   min-height: 70%;
 }
+@keyframes example {
+  0% {margin-left: 1200px;}
+  100% {margin-left: 10px;}
+  
+  
+}
+#delivery{
+margin-left: 1200px;
+animation-name: example;
+animation-duration: 8s;
+animation-delay: 1s;
+animation-iteration-count: 2;
+animation-direction: alternate;
+animation-timing-function: linear;
+}
+
 </style>
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script>
@@ -126,43 +142,43 @@ $(document).ready(function() {
     <div class="carrusel">
         <div class="product" id="product_0">
             <img src="pizza2.png" width="195" height="200" />
-            <h5>Margherita</h5>
-            <p>$12.50</p>
+            <h4>Margherita</h4>
+            <h5>$12.50</h5>
         </div>
         <div class="product" id="product_1">
             <img src="pizza3.png" width="195" height="200" />
-            <h5>Formaggio</h5>
-            <p>$ 15.50</p>
+            <h4>Formaggio</h4>
+            <h5>$15.50</h5>
         </div>
         <div class="product" id="product_2">
             <img src="pizza4.png" width="195" height="200" />
-            <h5>Chicken</h5>
-            <p>$17.00 €</p>
+            <h4>Chicken</h4>
+            <h5>$17.00 </h5>
         </div>
         <div class="product" id="product_3">
             <img src="pizza5.png" width="195" height="200" />
-            <h5>Pineapple'o'clock</h5>
-            <p>$ 16.50</p>
+            <h4>Pineapple'o'clock</h4>
+            <h5>$16.50</h5>
         </div>
         <div class="product" id="product_4">
             <img src="pizza6.png" width="195" height="200" />
-            <h5>Meat Town</h5>
-            <p>$ 20.00</p>
+            <h4>Meat Town</h4>
+            <h5>$20.00</h5>
         </div>
         <div class="product" id="product_5">
             <img src="pizza7.png" width="195" height="200" />
-            <h5>Parma</h5>
-            <p>$ 21.50</p>
+            <h4>Parma</h4>
+            <h5>$21.50</h5>
         </div>
         <div class="product" id="product_5">
           <img src="lasagna.png" width="195" height="200" />
-          <h5>Lasagna</h5>
-          <p>$ 13.50</p>
+          <h4>Lasagna</h4>
+          <h5>$13.50</h5>
         </div>
         <div class="product" id="product_5">
           <img src="ravioli.png" width="195" height="200" />
-          <h5>Ravioli</h5>
-          <p>$ 14.50</p>
+          <h4>Ravioli</h4>
+          <h5>$14.50</h5>
         </div>
     </div>
 </div>  
@@ -188,6 +204,8 @@ $(document).ready(function() {
     <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>PIZZERIA R&R</b></span>
     <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
   </div>
+  <img id="delivery" src="delivery.png" width="100" height="100" />
+  <h3 style="margin-left: 1200px;font-weight: bold;">STAY AT HOME</h3>
 </header>
 
 <!-- Menu Container -->
